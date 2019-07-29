@@ -62,7 +62,7 @@ RSpec.describe JsonApiNormalizer do
 
     context 'Payload contains errors' do
       let(:errors) {  fixture(:errors) }
-      let(:payload) { errors.merge({ 'jsonapi' => { 'version' => '1.0.0' } }) }
+      let(:payload) { errors.merge('jsonapi' => { 'version' => '1.0.0' }) }
       let(:output) { described_class.parse(payload) }
 
       it 'returns errors' do

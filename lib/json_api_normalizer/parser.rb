@@ -15,9 +15,11 @@ module JsonApiNormalizer
 
       return payload.slice('errors') if payload.key?('errors')
 
-      return normalize(payload['data']) if payload['data'].is_a?(Hash)
+      data = payload['data']
 
-      payload['data'].map { |json_model| normalize(json_model) }
+      return normalize(data) if data.is_a?(Hash)
+
+      data.map { |json_model| normalize(json_model) }
     end
 
     def self.parse(payload)
