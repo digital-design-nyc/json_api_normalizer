@@ -13,7 +13,7 @@ module JsonApiNormalizer
     def parse
       validate_payload
 
-      return payload if payload.key?('errors')
+      return payload.slice('errors') if payload.key?('errors')
 
       return normalize(payload['data']) if payload['data'].is_a?(Hash)
 

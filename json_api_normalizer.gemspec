@@ -5,11 +5,11 @@ require 'json_api_normalizer/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = 'json_api_parser'
+  spec.name        = 'json_api_normalizer'
   spec.version     = JsonApiNormalizer::VERSION
   spec.authors     = ['Ivan Rudskikh']
   spec.email       = ['shredder.rull@gmail.com']
-  spec.homepage    = 'https://github.com/digital-design-nyc/json_api_parser'
+  spec.homepage    = 'https://github.com/digital-design-nyc/json_api_normalizer'
   spec.summary     = 'Simple json api normalizer'
   spec.description = 'Simple json api normalizer'
   spec.license     = 'MIT'
