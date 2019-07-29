@@ -1,4 +1,5 @@
-require 'json_api_parser'
+require 'json_api_normalizer'
+require 'pry'
 
 Dir['./spec/support/**/*.rb'].each { |file| require file }
 
