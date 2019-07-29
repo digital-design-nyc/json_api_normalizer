@@ -1,5 +1,5 @@
 # JsonApiNormalizer
-Normalize json api format to simple
+A simple way to convert datasets based on JSON API specification
 
 ## Installation
 Add this line to your application's Gemfile:
